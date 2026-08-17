@@ -1,16 +1,19 @@
 //Problem Link : https : // www.hackerrank.com/challenges/playing-with-characters/problem?isFullScreen=true
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
-  int main()
-{
+int main() {
+    char ch;
+    char str[100];
+    char sentence[100];
 
-    char s[100];
-    scanf("%[^\n]%*c", &s);
-    printf("Hello, World!\n");
-    printf("%s", s);
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    scanf("%c", &ch);
+    scanf("%s", str);
+    getchar();  // consume the newline
+    fgets(sentence, sizeof(sentence), stdin);
+
+    printf("%c\n", ch);
+    printf("%s\n", str);
+    printf("%s", sentence);
+
     return 0;
 }
